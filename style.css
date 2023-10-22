@@ -1,0 +1,207 @@
+:root {
+  --clr-white: 0, 0%, 100%;
+  --clr-black: 244, 23%, 12%;
+  --clr-cream: 20, 33%, 98%;
+  --font-family-ibm: "IBM Plex Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+  max-width: 1440px;
+  position: relative;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+header {
+  padding-top: 50px;
+}
+header .logo {
+  width: 119px;
+  margin: 0 auto;
+}
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+header .content .side-img {
+  width: 350px;
+}
+header .content .title {
+  width: 445px;
+  color: #28283D;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 64px;
+  margin: 0 auto;
+}
+header .content .description {
+  width: 540px;
+  color: #87879D;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+header .content .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+header .content .btns .btn-download {
+  width: 193px;
+  height: 58px;
+  border-radius: 29px;
+  background: #4D96A9;
+  border: none;
+  color: #FFF;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
+  cursor: pointer;
+}
+header .content .btns .btn-info {
+  width: 139px;
+  height: 58px;
+  border-radius: 29px;
+  border: none;
+  background: #855FB1;
+  cursor: pointer;
+  color: #FFF;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
+}
+
+main .step {
+  width: 56px;
+  height: 56px;
+  position: relative;
+  border-radius: 29px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  background: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 230px auto 100px auto;
+  color: #87879D;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
+}
+main .step::before {
+  content: "";
+  width: 2px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: -187%;
+  background-color: rgba(135, 135, 157, 0.25);
+  color: #87879D;
+}
+main .galery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 60px;
+}
+main .galery .image-container {
+  width: 498px;
+}
+main .galery .image-container img {
+  border-radius: 10px;
+}
+main .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 50px auto;
+}
+main .content .title {
+  color: #4D96A9;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+main .content .heading {
+  width: 445px;
+  color: #28283D;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+}
+main .content .desc {
+  width: 540px;
+  color: #87879D;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}/*# sourceMappingURL=style.css.map */
