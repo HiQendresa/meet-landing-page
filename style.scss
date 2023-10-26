@@ -231,3 +231,48 @@ main {
         }
     }
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.1045;
+    background-image: url('./assets/mobile/image-footer.jpg');
+
+    @media screen and (min-width: 678px){
+        background-image: url('./assets/mobile/image-footer.jpg');
+    }
+    @media screen and (min-width: 1200px){
+        // height: 960px;
+        background-image: url('./assets/desktop/image-footer.jpg');
+        background-repeat: no-repeat;
+    }
+    .title {
+        width: 350px;
+        color: #FAFAFA;
+        font-family: Red Hat Display;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 44px;
+    }
+
+    .description {
+        width: 350px;
+        color: #FAFAFA;
+        font-family: Red Hat Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; 
+    }
+
+    .btn-download {
+        width: 193px;
+        height: 58px;
+
+        border-radius: 29px;
+        background: #855FB1;
+
+    }
+}
