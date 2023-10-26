@@ -58,23 +58,17 @@ header .logo {
 }
 header .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-top: 50px;
 }
+@media screen and (min-width: 1200px) {
+  header .content {
+    justify-content: space-between;
+  }
+}
 header .content .side-img {
   width: 350px;
-}
-header .content .title {
-  width: 445px;
-  color: #28283D;
-  text-align: center;
-  font-family: Red Hat Display;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 64px;
-  margin: 0 auto;
 }
 header .content .description {
   width: 540px;
@@ -89,6 +83,26 @@ header .content .description {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  position: absolute;
+  top: 16%;
+  left: 0%;
+  transform: translate(22%, 50%);
+}
+@media screen and (min-width: 1200px) {
+  header .content .description {
+    position: relative;
+  }
+}
+header .content .description .title {
+  width: 445px;
+  color: #28283D;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 64px;
+  margin: 0 auto;
 }
 header .content .btns {
   display: flex;
@@ -125,34 +139,6 @@ header .content .btns .btn-info {
   line-height: 26px;
 }
 
-main .step {
-  width: 56px;
-  height: 56px;
-  position: relative;
-  border-radius: 29px;
-  border: 1px solid rgba(135, 135, 157, 0.25);
-  background: #FAFAFA;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 230px auto 100px auto;
-  color: #87879D;
-  font-family: Red Hat Display;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 26px;
-}
-main .step::before {
-  content: "";
-  width: 2px;
-  height: 100px;
-  position: absolute;
-  left: 50%;
-  top: -187%;
-  background-color: rgba(135, 135, 157, 0.25);
-  color: #87879D;
-}
 main .galery {
   display: flex;
   justify-content: space-between;
@@ -207,11 +193,9 @@ main .content .desc {
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 0.1045;
+  padding: 100px 0;
   background-image: url("./assets/mobile/image-footer.jpg");
+  position: relative;
 }
 @media screen and (min-width: 678px) {
   footer {
@@ -224,7 +208,27 @@ footer {
     background-repeat: no-repeat;
   }
 }
-footer .title {
+footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4D96A9;
+  opacity: 0.88;
+  z-index: 1;
+}
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+footer .content .title {
   width: 350px;
   color: #FAFAFA;
   font-family: Red Hat Display;
@@ -233,7 +237,7 @@ footer .title {
   font-weight: 900;
   line-height: 44px;
 }
-footer .description {
+footer .content .description {
   width: 350px;
   color: #FAFAFA;
   font-family: Red Hat Display;
@@ -242,9 +246,50 @@ footer .description {
   font-weight: 500;
   line-height: 26px;
 }
-footer .btn-download {
+footer .content .btn-download {
   width: 193px;
   height: 58px;
   border-radius: 29px;
   background: #855FB1;
+  border: none;
+  color: #FFF;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
+}
+
+.step {
+  width: 56px;
+  height: 56px;
+  position: relative;
+  border-radius: 29px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  background: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 230px auto 100px auto;
+  color: #87879D;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
+}
+.step::before {
+  content: "";
+  width: 2px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: -187%;
+  background-color: rgba(135, 135, 157, 0.25);
+  color: #87879D;
+}
+
+.step-02 {
+  margin-bottom: -25px;
+  z-index: 2;
 }/*# sourceMappingURL=style.css.map */
